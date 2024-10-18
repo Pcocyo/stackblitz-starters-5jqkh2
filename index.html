@@ -1,17 +1,233 @@
 <!DOCTYPE html>
+
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elson portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>[insert name] Portifolio</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <h2>Elson</h2>
+        </a>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#Hero" class="logo">
+              <h2>Elson</h2>
+            </a>
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li><a href="#Hero" class="navbar-link">Home</a></li>
+            <li><a href="#About" class="navbar-link">About</a></li>
+            <li><a href="#Project" class="navbar-link">Project</a></li>
+            <li><a href="#Contact" class="navbar-link">Contact</a></li>
+          </ul>
 
-<body>
+          <div class="wrapper">
+            <a href="mailto:joshuaelson46@gmail.com" class="contact-link"
+              >joshuaelson46@gmail.com</a
+            >
+            <a href="tel:01128998150" class="contact-link">+6011 2899 8150</a>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/elson-joseph-b2bb53231/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="link-outline"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/p_oc_oyo/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Pcocyo"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="hero section" id="Hero">
+          <div class="container">
+            <figure class="hero-banner" data-reveal="top">
+              <img src="Me_2.png" alt="photo" width="560" height="540" />
+            </figure>
+            <div class="hero-content">
+              <h1 class="h1 hero-title" data-reveal="top">
+                Hello! I'm a programmer and full stack developer.
+              </h1>
+
+              <p class="section-text" data-reveal="top">
+                I'm Elson, full stack developer and a programmer hailed in
+                Sabah. I’m very passionate about the work that I do.
+              </p>
+              <div class="btn-wrapper" data-reveal="top">
+                <a href="#" class="btn btn-primary">See My Works</a>
+                <a href="#" class="btn btn-secondary">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section about" aria-label="about" id="About">
+          <div class="container">
+            <div class="wrapper">
+              <div data-reveal="left" class="section-group">
+                <h2 class="h2">My skill</h2>
+                <p class="section-text">
+                  Im a passionate developer with experience in building full
+                  stack application using front end and back end technology. I
+                  have build everything from small application to a large
+                  application like Chat application. Ensuring performance,
+                  security, and scalability in each projects.
+                </p>
+              </div>
+              <ul class="progress-list" data-reveal="right">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Html,Css,Javascript</p>
+                    <span class="span">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 80%; background-color: #c7b1dd"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Databases</p>
+                    <span class="span">60%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 60%; background-color: #8caeec"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>React</p>
+                    <span class="span">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 80%; background-color: #b0d4c1"
+                    ></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Ui/Ux</p>
+                    <span class="span">50%</span>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 50%; background-color: #e3a6b6"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="divider"></div>
+
+        <section class="section project" id="Project" aria-label="project">
+          <div class="container">
+            <div class="text-wrapper" data-reveal="left">
+              <h1 class="h1">Latest Project</h1>
+              <p class="section-text">Check out some of my latest project</p>
+              <button class="btn btn-primary">
+                <a href="#">See All Project</a>
+              </button>
+            </div>
+            <ul class="project-wrapper">
+              <li class="project-list" data-reveal="right">
+                <figure class="project-icon">
+                  <ion-icon name="chatbubbles-outline"></ion-icon>
+                </figure>
+                <div class="project-text">
+                  <h4 class="project-title">Chat application</h4>
+                  <p class="project-description">
+                    Created with MongoDB, React, NodeJs and Express
+                  </p>
+                </div>
+                <button class="btn btn-primary">
+                  <a href="https://github.com/Pcocyo/ChatApp" target="_blank"
+                    >Check Out</a
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <section class="section contact" id="Contact">
+          <div class="container">
+            <div class="wrapper" data-reveal="right">
+              <div class="text-wrapper">
+                <figure class="contact-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </figure>
+                <h1 class="h1 section-title">
+                  If you like to work with me, I am one click away!
+                </h1>
+              </div>
+              <button class="btn btn-secondary" data-reveal="left">
+                <a href="mailto:joshuaElson46@gmail.com">Send message</a>
+              </button>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <script src="index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
-
